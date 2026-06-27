@@ -31,7 +31,7 @@ if (!fs.existsSync(AVATAR_DIR)) fs.mkdirSync(AVATAR_DIR);
 if (fs.existsSync(FRONTEND_DIR)) {
   app.use(express.static(FRONTEND_DIR));
   // SPA fallback: serve index.html for unknown routes
-  app.get("*", (req, res) => {
+  app.get(/.*/, (req, res) => {
     if (!req.path.startsWith("/api")) {
       res.sendFile(path.join(FRONTEND_DIR, "index.html"));
     }
