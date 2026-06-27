@@ -1,0 +1,4 @@
+frontend/src
+frontend/vite.config.js
+frontend/package-lock.json
+frontend/node_modules

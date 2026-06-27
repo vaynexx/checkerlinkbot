@@ -7,6 +7,6 @@
   },
   "scripts": {
     "start": "node backend/server.js",
-    "install": "npm --prefix backend install"
+    "postinstall": "cd backend && npm install"
   }
 }
