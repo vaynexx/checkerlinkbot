@@ -6,6 +6,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "start": "cd backend && node server.js"
+    "start": "node backend/server.js",
+    "install": "npm --prefix backend install"
   }
 }

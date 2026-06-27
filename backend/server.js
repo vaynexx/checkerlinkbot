@@ -22,9 +22,22 @@ app.use(cors());
 app.use(express.json());
 
 const AVATAR_DIR = path.join(__dirname, "avatars");
+const FRONTEND_DIR = path.join(__dirname, "../frontend/dist");
 
 app.use("/avatars", express.static(AVATAR_DIR));
 if (!fs.existsSync(AVATAR_DIR)) fs.mkdirSync(AVATAR_DIR);
+
+// Serve frontend static files
+if (fs.existsSync(FRONTEND_DIR)) {
+  app.use(express.static(FRONTEND_DIR));
+  // SPA fallback: serve index.html for unknown routes
+  app.get("*", (req, res) => {
+    if (!req.path.startsWith("/api")) {
+      res.sendFile(path.join(FRONTEND_DIR, "index.html"));
+    }
+  });
+}
+
 ensureLinksFile();
 
 function getOwnerIdFromRequest(req) {
