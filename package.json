@@ -1,0 +1,11 @@
+{
+  "name": "checkerlinkbot",
+  "version": "1.0.0",
+  "description": "Telegram Checker Bot with Link Management",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "cd backend && node server.js"
+  }
+}
