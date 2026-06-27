@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1782518172784,
+    "sequence": 1,
+    "name": "owner-test-1",
+    "displayName": "owner-test-1",
+    "url": "https://t.me/+E7Hfj-qsCZplMTAy",
+    "inviteLink": "https://t.me/+E7Hfj-qsCZplMTAy",
+    "addedBy": "Owner",
+    "createdBy": "Testing comment",
+    "createdByComment": "Testing comment",
+    "status": "active",
+    "createdAt": "2026-06-26T23:56:12.784Z",
+    "createdAtText": "27.06.2026, 02:56:12",
+    "requestCount": 0,
+    "requests": []
+  },
+  {
+    "id": 1782518275585,
+    "sequence": 2,
+    "name": "l",
+    "displayName": "l",
+    "url": "https://t.me/+XTDIaJsW95Q1Zjcy",
+    "inviteLink": "https://t.me/+XTDIaJsW95Q1Zjcy",
+    "addedBy": "AccessUser",
+    "createdBy": "Testing comment",
+    "createdByComment": "Testing comment",
+    "status": "active",
+    "createdAt": "2026-06-26T23:57:55.585Z",
+    "createdAtText": "27.06.2026, 02:57:55",
+    "requestCount": 0,
+    "requests": []
+  },
+  {
+    "id": 1782542696252,
+    "sequence": 3,
+    "name": "cc",
+    "displayName": "cc",
+    "url": "https://t.me/+clfFjpXzYh85NDZi",
+    "inviteLink": "https://t.me/+clfFjpXzYh85NDZi",
+    "addedBy": "AccessUser",
+    "createdBy": "Testing comment",
+    "createdByComment": "Testing comment",
+    "status": "active",
+    "createdAt": "2026-06-27T06:44:56.252Z",
+    "createdAtText": "27.06.2026, 09:44:56",
+    "requestCount": 1,
+    "requests": [
+      {
+        "id": "7731568306-1782543339740",
+        "userId": "7731568306",
+        "username": "@vaynexxov",
+        "firstName": "V",
+        "lastName": "",
+        "requestedAt": "2026-06-27T06:55:39.000Z",
+        "verifiedInBase": false,
+        "matchedBy": "",
+        "joinDecision": "declined"
+      }
+    ]
+  }
+]
