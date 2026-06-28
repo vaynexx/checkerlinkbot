@@ -390,7 +390,8 @@ app.post('/api/create-link', accessOnly, async (req, res) => {
     }
 });
 
+const PORT = process.env.PORT || 5000;
 initDB().then(async () => {
     console.log("✅ Сервер та бот активні.");
-    app.listen(5000, () => console.log(`🚀 Сервер: http://localhost:5000`));
+    app.listen(PORT, "0.0.0.0", () => console.log(`🚀 Сервер: http://0.0.0.0:${PORT}`));
 });
